@@ -1,0 +1,41 @@
+body {
+    background-color: #f5e6c8;
+    color: black;
+    scroll-behavior: smooth;
+
+
+    .intro {
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-bottom: 8px;
+        display: inline-block;
+        font-family: "Caveat", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-size: 53px;
+        font-style: normal;
+
+    }
+
+    .intro:hover {
+        opacity: 1.0;
+        cursor: progress;
+    }
+
+
+    .name {
+        font-family: "Caveat", serif;
+        font-size: 30px;
+        margin-left: 150px;
+        margin-top: 8px;
+
+
+    }
+
+
+
+
+
+
+
+}
