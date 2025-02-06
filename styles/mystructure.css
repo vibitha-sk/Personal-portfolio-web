@@ -14,6 +14,10 @@ body {
         font-weight: 700;
         font-size: 53px;
         font-style: normal;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid black;
+        width: fit-content;
 
     }
 
