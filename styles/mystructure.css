@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: #f5e6c8;
     color: black;
@@ -15,30 +20,190 @@ body {
         font-size: 53px;
         font-style: normal;
         white-space: nowrap;
-        overflow: hidden;
-        border-right: 2px solid black;
-        width: fit-content;
+        overflow: hidden;    
+        width: 100%;          
+        
 
     }
-
-    .intro:hover {
-        opacity: 1.0;
-        cursor: progress;
+    @media (max-width: 768px) {
+        .intro {
+            font-size: 40px;  /* Reduce the font size for smaller screens */
+            margin-left: 20px; /* Adjust margins if necessary */
+        }
     }
+    
+    @media (max-width: 480px) {
+        .intro{
+            font-size: 30px;  /* Further reduce the font size on very small screens */
+            margin-left: 10px; /* Adjust margins further */
+        }
+    }
+    
 
 
-    .name {
+    .about-me {
         font-family: "Caveat", serif;
         font-size: 30px;
         margin-left: 150px;
         margin-top: 8px;
+        max-width: 80%;
+        line-height:1.6;
+        word-wrap: break-word;
+        white-space: normal;
 
 
     }
+    @media (max-width: 768px) {
+        .about-me {
+            font-size: 24px; /* Reduce font size for tablets */
+            margin-left: 20px; /* Reduce left margin for smaller screens */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .about-me {
+            font-size: 18px; /* Further reduce font size for mobile */
+            margin-left: 10px; /* Further reduce left margin for mobile */
+        }
+    }
+    .about-me a {
+        text-decoration: none; 
+        color: inherit;  
+        cursor: crosshair; 
+        font-weight: normal; 
+        transition: font-weight 0.3s ease;
+    }
+    
+    
+    .about-me a:hover {
+        font-weight: bold; 
+    }
+    
+    .aboutMe-button{
+        font-family: "Caveat", serif;
+        font-size: 20px;
+        padding: 10px 30px;
+        color:black;
+        border-radius:50px;
+        cursor:pointer;
+        font-weight: bold;
+        margin-left:140px;
+        background-color: #f5e6c8;
+        transition: background-color 0.3s ease;
+    }
+    .aboutMe-button:hover {
+        background-color:#e4d1a3;
+    }
+
+    /*first section in what i am doing*/
+    #what-i-do{
+
+     margin-top: 50px;
+     padding: 20px 15px;;
+    background-color: #f5e6c8;
+    border-radius: 15px;
+    font-family: "Caveat", serif;
+    font-size: 30px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.0);
+    display: none; /* Initially hidden */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    margin-left:50px;
+    max-width: 50%;
+}
+    #what-i-do.visible {
+       opacity: 1;
+}  
+   #what-i-do:hover{
+    background-color:#e4d1a3;
+   }
+
+.ellehacks-link{
+    text-decoration: none; 
+        color: inherit;  
+        cursor: crosshair; 
+        font-weight: normal; 
+        transition: font-weight 0.3s ease;
+}
+.ellehacks-link:hover{
+    font-weight: bold; 
+    
+}
+
+.ellehacks-logo {
+    max-width: 70px;
+    height: auto; 
+    vertical-align: middle; 
+    margin-right: 15px; 
+    margin-top: -20px; /*follow this to move the logo upward*/
+}
+   
 
 
+   /*reach me out button*/
 
+.contactme-button {
+    font-family: "Caveat", serif;
+    font-size: 22px;
+    background-color:  #f5e6c8;
+    color: black;
+    padding: 10px 30px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left:10px;
+    font-weight:bold;
+}
 
+.contactme-button:hover {
+   background-color :#e4d1a3;
+    color: black;
+}
+
+   /* Pop-up container */
+   .popup {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    background-color:  #f5e6c8;
+    color:black;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius:35px;
+    text-align: center;
+    width: 150px;
+    max-width: 50%;
+    
+}
+.popup:hover{
+    background-color :#e4d1a3;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .github-icon,.linkedin-icon,.email-icon,.location-icon {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .github-icon,.linkedin-icon,.email-icon:hover {
+    color:black;
+    transition: color 0.3s ease;
+    
+  }
+  .popup.show {
+    opacity: 1;
+    transform: translateY(0); /* Slide up */
+}
+  
 
 
 
