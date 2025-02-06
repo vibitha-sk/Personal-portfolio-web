@@ -117,7 +117,37 @@ body {
    #what-i-do:hover{
     background-color:#e4d1a3;
    }
+   @media (max-width: 768px) {
+    #what-i-do {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+    }
 
+    .ellehacks-logo {
+        width: 80%;
+    }
+
+    .ellehacks-link {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    #what-i-do {
+        font-size: 14px;
+        line-height: 1.4;
+        padding: 10px;
+    }
+    .ellehacks-logo {
+        width: 70%;
+    }
+
+    .ellehacks-link {
+        font-size: 14px;
+    }
+}
 .ellehacks-link{
     text-decoration: none; 
         color: inherit;  
@@ -160,6 +190,24 @@ body {
    background-color :#e4d1a3;
     color: black;
 }
+@media (max-width: 768px) {
+    .contactme-button,
+    .aboutMe-button {
+        font-size: 18px;
+        padding: 8px 25px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactme-button,
+    .aboutMe-button {
+        font-size: 16px;
+        padding: 6px 20px;
+        margin-left: 10px;
+        width: 100%;
+    }
+}
 
    /* Pop-up container */
    .popup {
@@ -177,6 +225,23 @@ body {
     width: 150px;
     max-width: 50%;
     
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 80%; 
+        top: 80px; 
+        right: 10px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 90%; 
+        top: 60px;
+        right: 5px; 
+        padding: 15px; 
+    }
 }
 .popup:hover{
     background-color :#e4d1a3;
