@@ -95,9 +95,7 @@ body {
         margin-left:140px;
         background-color: #f5e6c8;
         transition: background-color 0.3s ease;
-        display: flex; /* Use flexbox */
-        justify-content: space-between; /* Space out buttons evenly */
-        gap: 20px;
+        
     }
     .aboutMe-button:hover {
         background-color:#e4d1a3;
@@ -125,12 +123,15 @@ body {
    #what-i-do:hover{
     background-color:#e4d1a3;
    }
-   @media (max-width: 768px) {
+   @media only screen and (max-width: 600px) {
     #what-i-do {
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: center;
+        font-size: 18px; /* Smaller font size for mobile */
+        padding: 15px 10px; /* Adjust padding for mobile */
+        margin-left: 20px; /* Reduce left margin for mobile */
+        margin-right: 20px; /* Add right margin to ensure content is spaced */
+        max-width: 90%; /* Make the element take up 90% of the screen width */
     }
+
 
     .ellehacks-logo {
         width: 80%;
@@ -140,14 +141,18 @@ body {
         display: block;
         margin-top: 10px;
     }
+
 }
 
-@media (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     #what-i-do {
-        font-size: 14px;
-        line-height: 1.4;
-        padding: 10px;
+        font-size: 22px; /* Adjust font size for tablets */
+        padding: 18px 12px; /* Adjust padding for tablets */
+        margin-left: 30px; /* Adjust left margin for tablets */
+        margin-right: 30px; /* Adjust right margin */
+        max-width: 80%; /* Make the element take up 80% of the screen width */
     }
+
     .ellehacks-logo {
         width: 70%;
     }
@@ -175,6 +180,7 @@ body {
     margin-right: 15px; 
     margin-top: -20px; /*follow this to move the logo upward*/
 }
+
    
 
 
@@ -192,9 +198,7 @@ body {
     transition: background-color 0.3s, color 0.3s;
     margin-left:10px;
     font-weight:bold;
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Space out buttons evenly */
-    gap: 20px;
+   
 }
 
 .contactme-button:hover {
@@ -244,18 +248,18 @@ body {
 
 @media only screen and (max-width: 600px) {
     .popup {
-        top: 80px; /* Adjust top positioning for mobile */
-        right: 20px; /* Reduce right margin for mobile */
-        width: 80%; /* Popup takes up 80% of the width */
+        top: 100px; /* Adjust top positioning for mobile */
+        right: 50px; /* Reduce right margin for mobile */
+        width: 50%; /* Popup takes up 80% of the width */
         transform: translate(0, 0); /* Remove the horizontal translation */
     }
 }
 
 @media only screen and (max-width: 768px) {
     .popup {
-        top: 80px; /* Adjust top positioning for tablets */
-        right: 30px; /* Reduce right margin for tablets */
-        width: 70%; /* Popup takes up 70% of the width */
+        top: 100px; /* Adjust top positioning for tablets */
+        right: 50px; /* Reduce right margin for tablets */
+        width: 50%; /* Popup takes up 70% of the width */
         transform: translate(0, 0); /* Remove the horizontal translation */
     }
 }
