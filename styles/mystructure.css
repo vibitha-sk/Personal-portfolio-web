@@ -90,6 +90,9 @@ body {
         margin-left:140px;
         background-color: #f5e6c8;
         transition: background-color 0.3s ease;
+        display: flex; /* Use flexbox */
+        justify-content: space-between; /* Space out buttons evenly */
+        gap: 20px;
     }
     .aboutMe-button:hover {
         background-color:#e4d1a3;
@@ -184,6 +187,9 @@ body {
     transition: background-color 0.3s, color 0.3s;
     margin-left:10px;
     font-weight:bold;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space out buttons evenly */
+    gap: 20px;
 }
 
 .contactme-button:hover {
@@ -196,6 +202,11 @@ body {
         font-size: 18px;
         padding: 8px 25px;
         margin-left: 20px;
+        width:auto;
+        display: flex;
+        justify-content: center;  /* Center the buttons */
+        flex-wrap: wrap;          /* Allow buttons to wrap if necessary */
+        gap: 10px;  
     }
 }
 
@@ -205,7 +216,11 @@ body {
         font-size: 16px;
         padding: 6px 20px;
         margin-left: 10px;
-        width: 100%;
+        width: auto;
+        display: flex;
+        justify-content: center;  /* Center the buttons */
+        flex-wrap: wrap;          /* Allow buttons to wrap if necessary */
+        gap: 10px;  
     }
 }
 
