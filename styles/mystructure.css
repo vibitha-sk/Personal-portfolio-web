@@ -3,7 +3,6 @@ html {
 
 }
 
-
 body {
     background-color: #f5e6c8;
     color: black;
@@ -11,27 +10,9 @@ body {
     font-size: 18px;
     margin: 0;
 
-    @media (max-width: 768px) {
-        body {
-            font-size: 16px;
-        }
-    }
+}
+
     
-    /* For mobile screens (max-width of 480px) */
-    @media (max-width: 480px) {
-        body {
-            font-size: 14px;
-        }
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 16px;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
-    }
 
     .intro {
         margin-top: 100px;
@@ -130,44 +111,9 @@ body {
    #what-i-do:hover{
     background-color:#e4d1a3;
    }
-   @media only screen and (max-width: 600px) {
-    #what-i-do {
-        font-size: 18px; /* Smaller font size for mobile */
-        padding: 15px 10px; /* Adjust padding for mobile */
-        margin-left: 20px; /* Reduce left margin for mobile */
-        margin-right: 20px; /* Add right margin to ensure content is spaced */
-        max-width: 90%; /* Make the element take up 90% of the screen width */
-    }
+   
 
 
-    .ellehacks-logo {
-        width: 80%;
-    }
-
-    .ellehacks-link {
-        display: block;
-        margin-top: 10px;
-    }
-
-}
-
-@media only screen and (max-width: 768px) {
-    #what-i-do {
-        font-size: 22px; /* Adjust font size for tablets */
-        padding: 18px 12px; /* Adjust padding for tablets */
-        margin-left: 30px; /* Adjust left margin for tablets */
-        margin-right: 30px; /* Adjust right margin */
-        max-width: 80%; /* Make the element take up 80% of the screen width */
-    }
-
-    .ellehacks-logo {
-        width: 70%;
-    }
-
-    .ellehacks-link {
-        font-size: 14px;
-    }
-}
 .ellehacks-link{
     text-decoration: none; 
         color: inherit;  
@@ -261,5 +207,3 @@ body {
   
 
 
-
-}
