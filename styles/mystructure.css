@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+
 }
 
 
@@ -7,7 +8,30 @@ body {
     background-color: #f5e6c8;
     color: black;
     scroll-behavior: smooth;
+    font-size: 18px;
+    margin: 0;
 
+    @media (max-width: 768px) {
+        body {
+            font-size: 16px;
+        }
+    }
+    
+    /* For mobile screens (max-width of 480px) */
+    @media (max-width: 480px) {
+        body {
+            font-size: 14px;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
     .intro {
         margin-top: 100px;
@@ -53,24 +77,7 @@ body {
 
 
     }
-    @media only screen and (max-width: 600px) {
-        .about-me {
-            font-size: 18px; /* Adjust font size for mobile */
-            margin-left: 20px; /* Reduce margin on the left */
-            margin-top: 10px; /* Adjust top margin */
-            max-width: 90%; /* Increase max-width for smaller screens */
-        }
-    }
     
-   /* Tablets and smaller laptops */
-@media only screen and (max-width: 768px) {
-    .about-me {
-        font-size: 22px; /* Adjust font size for tablets */
-        margin-left: 30px; /* Adjust left margin */
-        margin-top: 10px; /* Adjust top margin */
-        max-width: 85%; /* Adjust max-width for tablets */
-    }
-}
     .about-me a {
         text-decoration: none; 
         color: inherit;  
@@ -205,28 +212,7 @@ body {
    background-color :#e4d1a3;
     color: black;
 }
-@media only screen and (max-width: 600px) {
-    .aboutMe-button,
-    .contactme-button {
-        font-size: 16px; /* Smaller font size for mobile */
-        padding: 8px 20px; /* Adjust padding for mobile screens */
-        margin-left: 20px; /* Reduce margin */
-        margin-bottom: 10px; /* Add some spacing between buttons */
-        width: 100%; /* Make buttons take full width on small screens */
-        justify-content: center; /* Center content in buttons */
-    }
-}
 
-@media only screen and (max-width: 768px) {
-    .aboutMe-button,
-    .contactme-button {
-        font-size: 18px; /* Slightly smaller font size for tablets */
-        padding: 9px 25px; /* Adjust padding */
-        margin-left: 20px; /* Adjust left margin */
-        width: 100%; /* Full-width buttons on tablets */
-        justify-content: center; /* Center content in buttons */
-    }
-}
 
    /* Pop-up container */
    .popup {
@@ -246,23 +232,7 @@ body {
     
 }
 
-@media only screen and (max-width: 600px) {
-    .popup {
-        top: 100px; /* Adjust top positioning for mobile */
-        right: 50px; /* Reduce right margin for mobile */
-        width: 50%; /* Popup takes up 80% of the width */
-        transform: translate(0, 0); /* Remove the horizontal translation */
-    }
-}
 
-@media only screen and (max-width: 768px) {
-    .popup {
-        top: 100px; /* Adjust top positioning for tablets */
-        right: 50px; /* Reduce right margin for tablets */
-        width: 50%; /* Popup takes up 70% of the width */
-        transform: translate(0, 0); /* Remove the horizontal translation */
-    }
-}
 .popup:hover{
     background-color :#e4d1a3;
 }
