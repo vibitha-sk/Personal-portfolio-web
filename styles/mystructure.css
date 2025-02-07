@@ -55,9 +55,9 @@ body {
         line-height:1.6;
         word-wrap: break-word;
         white-space: normal;
-
-
     }
+
+
     
     .about-me a {
         text-decoration: none; 
@@ -204,6 +204,156 @@ body {
     opacity: 1;
     transform: translateY(0); /* Slide up */
 }
+
+
+
+
+/*<600, 601,768,992,1200(px)>*/
+
+
+
+/******MOBILE VERSION*****/
+
+
+/******From 300 to 768*****/
+@media (min-width: 400px) and (max-width:768px) {    
+    .about-me{
+        width:60%;
+        margin-left:20px;
+        
+}
+.aboutMe-button{
+    
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.contactme-button {
+    
+    margin-left:10px;
+}
+
+}
+
+
+/******From 480 to 768*****/
+
+@media (min-width: 480px) and (max-width:768px) {
+    .about-me{
+        width:60%;
+        margin-left:20px;
+}
+.aboutMe-button{
+    
+    padding: 10px 30px;
+    margin-left:140px;
+    margin-bottom:10px;
+}
+.contactme-button {
+   
+    margin-left:10px;
+}
+#what-i-do{
+
+ 
+   font-size: 65px;
+   margin-left:10px;
+   
+}
+
+
+}
+
+/******From 400 to 768*****/
+@media (min-width: 300px) and (max-width:768px) {    
+    .about-me{
+        width:100%;
+        margin-left:20px;
+        
+        
+}
+.aboutMe-button{
+    
+    margin-left:10px;
+    margin-bottom:10px;
+}
+.contactme-button {
+    
+    margin-left:5px;
+
+}
+#what-i-do{
+
   
+   margin-left:10px;
+   
+}
+
+}
+
+/******From 768 to 1200*****/
+@media (min-width: 768px) and (max-width:1200px) {    
+    .about-me{
+        width:100%;
+        margin-left:50px;
+        font-size:50px;      
+}
+.aboutMe-button{
+    
+    margin-left:50px;
+    margin-bottom:10px;
+}
+.contactme-button {
+    
+    margin-left:20px;
+}
+    #what-i-do{
+        margin-left:35px;
+        width:80%;
+        font-size:45px;
+        
+     }
+     .popup {
+        top: 10px;
+        right: 10px;
+        transform: none; /* Remove the translate effect */
+    }
+
+}
+
+/******From 1000 to 1300*****/
+@media (min-width: 1000px) and (max-width:1300px) {    
+    .about-me{
+        width:100%;
+        margin-left:50px;
+        font-size:50px;
+        
+}
+.aboutMe-button{
+    
+    margin-left:50px;
+    margin-bottom:10px;
+    font-size:30px;
+}
+.contactme-button {
+    
+    margin-left:20px;
+    font-size:30px;
+   
+}
+}
 
 
+@media(min-width:1000px)and (max-width:600px){
+    #what-i-do{
+        margin-left:10px;
+        width:80%;
+        
+     }
+}
+@media (max-width: 600px) {
+    .popup {
+        top: 10px;
+        right: 10px;
+        transform: none; /* Remove the translate effect */
+    }
+}
