@@ -14,7 +14,7 @@ window.onload = typeEffect;
 
 
 /*first section in what i do*/
-function revealContent() {https://app.netlify.com/sites/vibitha-me/
+function revealContent() {
     const section = document.getElementById('what-i-do');
     section.style.display = (section.style.display === 'none' || section.style.display === '') ? 'block' : 'none';
 }
@@ -25,6 +25,7 @@ function revealContent() {
         section.classList.add('visible');  // Add the 'visible' class after display
     }, 10);
 }
+
 
 
 
